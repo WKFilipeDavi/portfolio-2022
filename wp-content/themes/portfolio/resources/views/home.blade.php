@@ -6,7 +6,11 @@
 
 @section('content')
   @include('sections.header')
-  <div class="min-h-screen bg-pfd-very-dark-shade">
-
+  <div class="bg-pfd-very-dark-shade">
+    <div class="min-h-screen pt-[170px]">
+      <div class="font-pfd-baskervville text-white">image</div>
+      <div class="font-pfd-baskervville text-white">presentation</div>
+      <div class=" text-white">button</div>
+    </div>
   </div>
 @endsection

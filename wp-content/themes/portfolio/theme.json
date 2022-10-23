@@ -1140,6 +1140,11 @@
           "color": "#2f2b2a"
         },
         {
+          "name": "Pfd-very-dark-shade",
+          "slug": "pfd-very-dark-shade",
+          "color": "#2c2220"
+        },
+        {
           "name": "Pfd-black-fosco",
           "slug": "pfd-black-fosco",
           "color": "#26251c"
@@ -1191,6 +1196,11 @@
           "name": "Ui-monospace",
           "slug": "mono",
           "fontFamily": "ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace"
+        },
+        {
+          "name": "Baskerville",
+          "slug": "pfd-baskervville",
+          "fontFamily": "Baskerville"
         }
       ],
       "fontSizes": [

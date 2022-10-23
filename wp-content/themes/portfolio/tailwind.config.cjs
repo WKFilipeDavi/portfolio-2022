@@ -10,6 +10,9 @@ module.exports = {
         'pfd-green-yellow': '#adff2f',
         'pfd-green-title' : '#a1d3a2'
       }, // Extend Tailwind's default colors
+      fontFamily: {
+        'pfd-baskervville' : ['Baskerville'],
+      }
     },
   },
   plugins: [],

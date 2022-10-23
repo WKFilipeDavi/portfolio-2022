@@ -1,7 +1,11 @@
 <?php $__env->startSection('content'); ?>
   <?php echo $__env->make('sections.header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-  <div class="min-h-screen bg-pfd-very-dark-shade">
-
+  <div class="bg-pfd-very-dark-shade">
+    <div class="min-h-screen pt-[170px]">
+      <div class="font-pfd-baskervville text-white">image</div>
+      <div class="font-pfd-baskervville text-white">presentation</div>
+      <div class=" text-white">button</div>
+    </div>
   </div>
 <?php $__env->stopSection(); ?>
 
