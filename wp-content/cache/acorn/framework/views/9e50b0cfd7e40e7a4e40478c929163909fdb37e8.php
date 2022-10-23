@@ -1,4 +1,4 @@
-<header class="banner py-[5px] px-4 bg-pfd-dark-shade pfd-shadow">
+<header class="banner py-[5px] px-4 bg-pfd-dark-shade pfd-shadow fixed top-0 w-screen">
   <div class="flex justify-between">
     <div class="flex items-center">
       

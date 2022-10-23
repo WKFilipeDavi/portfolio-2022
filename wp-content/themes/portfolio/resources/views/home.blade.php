@@ -6,4 +6,7 @@
 
 @section('content')
   @include('sections.header')
+  <div class="min-h-screen bg-pfd-very-dark-shade">
+
+  </div>
 @endsection
