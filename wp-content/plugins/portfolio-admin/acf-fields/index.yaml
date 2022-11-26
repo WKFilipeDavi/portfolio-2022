@@ -1,3 +1,4 @@
 fields: []
-pages: []
+pages: 
+  - 'home.acf.yaml'
 blocks: []

@@ -1,0 +1,15 @@
+title: 'Campos adicionais'
+location:
+  -
+    -
+      param: post_template
+      operator: '=='
+      value: home.blade.php
+position: normal
+style: default
+active: true
+show_in_rest: 0
+fields:
+  who:
+    label: 'Who am i?'
+    type: textarea

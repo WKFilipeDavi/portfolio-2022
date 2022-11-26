@@ -26,8 +26,7 @@
       <h2 class="text-white text-center text-title-3"> &ltWho am i? /&gt </h2>
 
       <div class="text-white mt-4">
-        <p class="">Aenean id dignissim massa, sagittis semper diam. Donec ultricies nec arcu et scelerisque. Aenean nec posuere libero. Praesent imperdiet euismod diam, eget congue lectus tincidunt eu. Proin vehicula tristique turpis, nec feugiat ipsum porta ut.
-          Mauris maximus condimentum magna, eget feugiat odio imperdiet non.</p>
+        {!! $whoAmI !!}
       </div>
     </div>
   </div>
