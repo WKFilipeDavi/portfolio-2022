@@ -1268,6 +1268,21 @@
           "name": "9xl",
           "slug": "9xl",
           "size": "8rem"
+        },
+        {
+          "name": "title-1",
+          "slug": "title-1",
+          "size": "1.5rem"
+        },
+        {
+          "name": "title-2",
+          "slug": "title-2",
+          "size": "2.5rem"
+        },
+        {
+          "name": "title-3",
+          "slug": "title-3",
+          "size": "2.25rem"
         }
       ]
     }

@@ -17,7 +17,9 @@ module.exports = {
         //font-size mobile: 24px
         'title-1':['1.5rem'],
         //font-size mobile: 40px
-        'title-2':['2.5rem']
+        'title-2':['2.5rem'],
+        //font-size mobile: 36px
+        'title-3':['2.25rem']
       },
     },
   },
