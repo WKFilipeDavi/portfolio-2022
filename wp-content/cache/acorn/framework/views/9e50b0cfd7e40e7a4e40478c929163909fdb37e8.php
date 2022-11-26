@@ -3,7 +3,7 @@
     <div class="flex items-center">
       
       <img class="w-[32px] h-[32px] mr-2" src="<?= \Roots\asset('images/logo-3.png'); ?>">
-      <p class="text-[36px] text-pfd-green-title">FilipeDev</p>
+      <p class="text-[36px] text-pfd-green-yellow">FilipeDev</p>
     </div>
 
     <div class="flex items-center">

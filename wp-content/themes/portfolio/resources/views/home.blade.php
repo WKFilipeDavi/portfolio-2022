@@ -6,11 +6,20 @@
 
 @section('content')
   @include('sections.header')
-  <div class="bg-pfd-very-dark-shade">
-    <div class="min-h-screen pt-[170px]">
-      <div class="font-pfd-baskervville text-white">image</div>
-      <div class="font-pfd-baskervville text-white">presentation</div>
-      <div class=" text-white">button</div>
+  <div class="bg-pfd-very-dark-shade font-pfd-baskervville">
+    <div class="min-h-screen pt-[170px] flex flex-col items-center">
+      <div class="">
+        <img src="@asset('images/img-home.png')"/>
+      </div>
+
+      <div class=" text-white text-center mt-8">
+        <p class="text-title-1 tracking-[0.09rem]">Hello! I'm <span class="block text-title-2 -mt-[10px] -mb-[12px]">Filipe Davi</span> Web Developer</p>
+      </div>
+
+      <a href="https://github.com/WKFilipeDavi" target="_blank"
+      class="text-pfd-green-yellow text-title-1 tracking-[0.09rem]
+      py-3 px-10 bg-pfd-dark-shade rounded-[22px] mt-12
+      ">Github</a>
     </div>
   </div>
 @endsection
