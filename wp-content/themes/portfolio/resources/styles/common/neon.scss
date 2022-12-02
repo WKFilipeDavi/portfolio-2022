@@ -1,0 +1,26 @@
+.neon-box {
+  border: 5px solid rgb(199, 247, 231);
+  box-shadow:
+    /* White glow */
+    0 0 2px #fff,
+    inset 0 0 2px #fff,
+    0 0 4px #fff,
+    inset 0 0 4px #fff,
+    0 0 6px #fff,
+    inset 0 0 6px #fff,
+
+
+    /* Green glow */
+    0 0 5px 2px #00ffaa,
+    0 0 10px 4px rgb(2, 230, 154),
+    0 0 15px 6px rgb(2, 204, 137),
+    0 0 20px 8px rgb(0, 233, 155),
+    0 0 25px 10px rgba(0, 184, 122, 0.984),
+
+    /*inner light*/
+    inset 0 0 8px #00ffaa,
+    inset 0 0 12px rgb(2, 230, 154),
+    inset 0 0 16px rgb(2, 204, 137),
+    inset 0 0 20px rgb(0, 233, 155),
+    inset 0 0 24px rgba(0, 184, 122, 0.984);
+}

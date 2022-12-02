@@ -1,6 +1,6 @@
 <?php $__env->startSection('content'); ?>
   <?php echo $__env->make('sections.header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-  <div class="bg-pfd-very-dark-shade font-pfd-baskervville">
+  <div class="bg-pfd-very-dark-shade font-pfd-baskervville pb-[50px]">
     <div class="min-h-screen pt-[170px] flex flex-col items-center">
       <div class="">
         <img src="<?= \Roots\asset('images/img-home.png'); ?>"/>
@@ -16,7 +16,7 @@
       ">Github</a>
     </div>
 
-    <div class="py-4 px-8 bg-pfd-dark-shade rounded-[61px] min-h-[400px]">
+    <div class="neon-box pt-4 pb-6 px-8 bg-pfd-dark-shade rounded-[61px] min-h-[400px]">
       <h2 class="text-white text-center text-title-3"> &ltWho am i? /&gt </h2>
 
       <div class="text-white mt-4">
