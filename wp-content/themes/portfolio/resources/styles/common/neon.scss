@@ -1,6 +1,32 @@
-.neon-box {
-  border: 5px solid rgb(199, 247, 231);
-  box-shadow:
+@keyframes pulsate {
+  100% {
+    box-shadow:
+    /* White glow */
+    0 0 1px #fff,
+    inset 0 0 1px #fff,
+    0 0 2px #fff,
+    inset 0 0 2px #fff,
+    0 0 3px #fff,
+    inset 0 0 3px #fff,
+
+
+    /* Green glow */
+    0 0 2px 1px #00ffaa,
+    0 0 7px 2px rgb(2, 230, 154),
+    0 0 12px 3px rgb(2, 204, 137),
+    0 0 17px 4px rgb(0, 233, 155),
+    0 0 22px 5px rgba(0, 184, 122, 0.984),
+
+    /*inner light*/
+    inset 0 0 5px #00ffaa,
+    inset 0 0 8px rgb(2, 230, 154),
+    inset 0 0 12px rgb(2, 204, 137),
+    inset 0 0 16px rgb(0, 233, 155),
+    inset 0 0 20px rgba(0, 184, 122, 0.984);
+  }
+
+  0% {
+    box-shadow:
     /* White glow */
     0 0 2px #fff,
     inset 0 0 2px #fff,
@@ -12,10 +38,10 @@
 
     /* Green glow */
     0 0 5px 2px #00ffaa,
-    0 0 10px 4px rgb(2, 230, 154),
-    0 0 15px 6px rgb(2, 204, 137),
-    0 0 20px 8px rgb(0, 233, 155),
-    0 0 25px 10px rgba(0, 184, 122, 0.984),
+    0 0 10px 3px rgb(2, 230, 154),
+    0 0 15px 5px rgb(2, 204, 137),
+    0 0 20px 6px rgb(0, 233, 155),
+    0 0 25px 8px rgba(0, 184, 122, 0.984),
 
     /*inner light*/
     inset 0 0 8px #00ffaa,
@@ -23,4 +49,10 @@
     inset 0 0 16px rgb(2, 204, 137),
     inset 0 0 20px rgb(0, 233, 155),
     inset 0 0 24px rgba(0, 184, 122, 0.984);
+  }
+}
+
+.neon-box {
+  border: 5px solid rgb(199, 247, 231);
+  animation: pulsate 2.5s infinite alternate;
 }
