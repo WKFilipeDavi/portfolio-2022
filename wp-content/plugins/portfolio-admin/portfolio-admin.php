@@ -37,4 +37,24 @@ function pfd_modify_windsor_config($config) {
 }
 add_filter('acf-windsor/config', 'pfd_modify_windsor_config');
 
+function pfd_projects_cpt() {
+  $args = array(
+      'label' => 'Projetos',
+      'labels' => array(
+          'name' => 'Projetos',
+          'singular_name' => 'Projeto',
+          'add_new' => 'Adicionar projeto',
+          'add_new_item' => 'Adicionar novo projeto',
+      ),
+      'public' => true,
+      'show_ui' => true,
+      'show_in_menu' => true
+
+  );
+
+  register_post_type('pfd_projects', $args);
+}
+
+add_action('init', 'pfd_projects_cpt');
+
  ?>
