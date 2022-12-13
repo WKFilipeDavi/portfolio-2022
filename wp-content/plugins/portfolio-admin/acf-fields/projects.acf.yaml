@@ -1,0 +1,25 @@
+title: Projeto
+location:
+  -
+    -
+      param: post_type
+      operator: '=='
+      value: pfd_projects
+position: normal
+style: default
+active: true
+show_in_rest: 0
+fields:
+  github_link:
+    label: 'Link do GitHub'
+    type: url
+  on_link:
+    label: 'Link do projeto no Ar'
+    type: url
+  prints:
+    label: 'Galeria de prints'
+    type: gallery
+    return_format: array
+    preview_size: medium
+    insert: append
+    library: all
