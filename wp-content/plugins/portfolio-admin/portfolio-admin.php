@@ -57,4 +57,23 @@ function pfd_projects_cpt() {
 
 add_action('init', 'pfd_projects_cpt');
 
+function pfd_projects_tax() {
+  $labels = array(
+    'name' => 'Tipos de projeto',
+    'singular_name' => 'Tipo de projeto',
+    'add_new_item' => 'Adicionar novo tipo', 
+  );
+
+  $args = array(
+    'labels' => $labels,
+    'public' => true,
+    'show_ui' => true,
+    'show_in_menu' => true
+  );
+
+  register_taxonomy('project_type', 'pfd_projects', $args);
+}
+
+add_action('init', 'pfd_projects_tax');
+
  ?>
