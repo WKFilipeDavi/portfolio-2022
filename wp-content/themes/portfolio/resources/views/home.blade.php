@@ -32,9 +32,11 @@
       </div>
     </div>
 
+    <span class="text-white text-[36px] flex justify-center">&lt!-- &nbsp &nbsp --/&gt</span>
+
     <div class="min-h-screen flex items-center">
       <div class="neon-object pt-4 pb-6 px-8 mt-10 bg-pfd-dark-shade rounded-[61px] min-h-[400px]">
-        Portfolio
+        <h2 class="text-white text-center text-title-3"> &ltPortfolio /&gt </h2>
       </div>
     </div>
 
