@@ -22,12 +22,21 @@
       ">Github</a>
     </div>
 
-    <div id="home-who" class="pt-4 pb-6 px-8 mt-10 bg-pfd-dark-shade rounded-[61px] min-h-[400px]">
-      <h2 class="text-white text-center text-title-3"> &ltWho am i? /&gt </h2>
+    <div class="min-h-screen flex items-center">
+      <div id="home-who" class="pt-4 pb-6 px-8 mt-10 bg-pfd-dark-shade rounded-[61px] min-h-[400px]">
+        <h2 class="text-white text-center text-title-3"> &ltWho am i? /&gt </h2>
 
-      <div class="text-white mt-4">
-        {!! $whoAmI !!}
+        <div class="text-white mt-4">
+          {!! $whoAmI !!}
+        </div>
       </div>
     </div>
+
+    <div class="min-h-screen flex items-center">
+      <div class="neon-object pt-4 pb-6 px-8 mt-10 bg-pfd-dark-shade rounded-[61px] min-h-[400px]">
+        Portfolio
+      </div>
+    </div>
+
   </div>
 @endsection

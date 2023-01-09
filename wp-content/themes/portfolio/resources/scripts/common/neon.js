@@ -19,10 +19,16 @@ function isInViewport(element) {
 function init() {
   console.log('Neon JS');
   let who = document.getElementById('home-who');
+  let neonObjs = document.querySelectorAll('.neon-object');
 
   window.addEventListener('scroll', function() {
     isInViewport(who) ? enableNeon(who) : disableNeon(who);
+
+    neonObjs.forEach((neonObj) => {
+      isInViewport(neonObj) ? enableNeon(neonObj) : disableNeon(neonObj);
+    })
   });
+
 }
 
 export default {
