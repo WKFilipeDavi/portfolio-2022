@@ -17,7 +17,6 @@ function isInViewport(element) {
 }
 
 function init() {
-  console.log('Neon JS');
   let who = document.getElementById('home-who');
   let neonObjs = document.querySelectorAll('.neon-object');
 
