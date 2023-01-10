@@ -30,32 +30,48 @@
     <span class="text-white text-[36px] flex justify-center">&lt!-- &nbsp &nbsp --/&gt</span>
 
     <div class="min-h-screen flex items-center">
-      <div class="neon-object pt-4 pb-6 px-8 mt-10 bg-pfd-dark-shade rounded-[61px] min-h-[400px]">
+      <div class="w-full neon-object pt-4 pb-6 px-8 mt-10 bg-pfd-dark-shade rounded-[61px] min-h-[400px]">
         <h2 class="text-white text-center text-title-3"> &ltPortfolio /&gt </h2>
 
+        <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="px-5">
+                  <span class="text-white text-right block">n/16</span>
+                  <div class="bg-gray-300 aspect-[3/2]">img</div>
+                </div>
+
+                <div class="text-white text-center">
+                  <h3>Titulo</h3>
+                  <p>Tag: Em casa / No trabalho</p>
+                  <div>
+                    <p>Descrição</p>
+                    <a href="#">+More</a>
+                  </div>
+
+                  <a href="#">Link no Ar</a>
+                  <a href="#">Link Github</a>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
       </div>
     </div>
 
-    <!-- Slider main container -->
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-      </div>
-
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
-      <!-- If we need scrollbar -->
-      <div class="swiper-scrollbar"></div>
-    </div>
 
 
   </div>
