@@ -16,6 +16,10 @@ module.exports = {
       fontSize: {
         //font-size mobile: 24px
         'title-1':['1.5rem'],
+        //font-size mobile: 20px
+        'subtitle-1':['1.25rem'],
+        //font-size mobile: 18px
+        'content-1':['1.125rem'],
         //font-size mobile: 40px
         'title-2':['2.5rem'],
         //font-size mobile: 36px

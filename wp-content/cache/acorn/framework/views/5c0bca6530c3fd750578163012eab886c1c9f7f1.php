@@ -44,16 +44,47 @@
                   <div class="bg-gray-300 aspect-[3/2]">img</div>
                 </div>
 
-                <div class="text-white text-center">
-                  <h3>Titulo</h3>
-                  <p>Tag: Em casa / No trabalho</p>
-                  <div>
-                    <p>Descrição</p>
-                    <a href="#">+More</a>
+                <div class="text-white text-center mt-2 px-5">
+                  <h3 class="text-title-1">Titulo</h3>
+                  <p class="text-subtitle-1">Tag: Em casa / No trabalho</p>
+                  <div class="mt-4 mb-[18px]">
+                    <p class="text-justify">Mussum Ipsum, cacilds vidis litro abertis.
+                      Viva Forevis aptent taciti sociosqu ad litora torquent.
+                      Não sou faixa preta cumpadi,
+                      sou preto inteiris, inteiris.Paisis, filhis,
+                      espiritis santis.Admodum accumsan disputationi eu sit.
+                      Vide electram sadipscing et per.
+                    </p>
+                    <a href="#" class="block text-right">+ More</a>
                   </div>
 
-                  <a href="#">Link no Ar</a>
-                  <a href="#">Link Github</a>
+                  <a href="#" class="block text-left text-content-1">Link no Ar</a>
+                  <a href="#" class="block text-left mt-[10px] text-content-1">Link Github</a>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="px-5">
+                  <span class="text-white text-right block">n/16</span>
+                  <div class="bg-gray-300 aspect-[3/2]">img</div>
+                </div>
+
+                <div class="text-white text-center mt-2 px-5">
+                  <h3 class="text-title-1">Titulo</h3>
+                  <p class="text-subtitle-1">Tag: Em casa / No trabalho</p>
+                  <div class="mt-4 mb-[18px]">
+                    <p class="text-justify">Mussum Ipsum, cacilds vidis litro abertis.
+                      Viva Forevis aptent taciti sociosqu ad litora torquent.
+                      Não sou faixa preta cumpadi,
+                      sou preto inteiris, inteiris.Paisis, filhis,
+                      espiritis santis.Admodum accumsan disputationi eu sit.
+                      Vide electram sadipscing et per.
+                    </p>
+                    <a href="#" class="block text-right">+ More</a>
+                  </div>
+
+                  <a href="#" class="block text-left text-content-1">Link no Ar</a>
+                  <a href="#" class="block text-left mt-[10px] text-content-1">Link Github</a>
                 </div>
               </div>
 

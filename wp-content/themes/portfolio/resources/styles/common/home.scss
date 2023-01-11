@@ -2,3 +2,26 @@
   width: 100%;
   height: auto;
 }
+
+.swiper-button-prev {
+  left: 0;
+  top: 20%;
+  color: #ADFF2F;
+  width: auto;
+
+  &::after{
+    font-size: 20px !important;
+  }
+
+}
+
+.swiper-button-next {
+  right: 0;
+  top: 20%;
+  color: #ADFF2F;
+  width: auto;
+
+  &::after{
+    font-size: 20px !important;
+  }
+}
