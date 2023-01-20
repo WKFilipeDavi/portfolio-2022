@@ -41,6 +41,8 @@
               <?php $__currentLoopData = $projects; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $project): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                 <?php
                   $terms = get_the_terms($project, 'project_type');
+                  $gh_link = get_field('github_link', $project);
+                  $on_link = get_field('on_link', $project);
                 ?>
 
                 <div class="swiper-slide">
@@ -63,8 +65,8 @@
                       <a href="#" class="block text-right">+ More</a>
                     </div>
 
-                    <a href="#" class="block text-left text-content-1">Link no Ar</a>
-                    <a href="#" class="block text-left mt-[10px] text-content-1">Link Github</a>
+                    <a href="<?php echo e($on_link); ?>" class="block text-left text-content-1"><i class="fa-solid fa-link text-pfd-green-yellow"></i> <span class="underline">Link no Ar </span></a>
+                    <a href="<?php echo e($gh_link); ?>" class="block text-left mt-[10px] text-content-1"><i class="fa-solid fa-link text-pfd-green-yellow"></i> <span class="underline"> Link Github </span></a>
                   </div>
                 </div>
               <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

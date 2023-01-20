@@ -46,6 +46,8 @@
               @foreach($projects as $project)
                 @php
                   $terms = get_the_terms($project, 'project_type');
+                  $gh_link = get_field('github_link', $project);
+                  $on_link = get_field('on_link', $project);
                 @endphp
 
                 <div class="swiper-slide">
@@ -68,8 +70,8 @@
                       <a href="#" class="block text-right">+ More</a>
                     </div>
 
-                    <a href="#" class="block text-left text-content-1">Link no Ar</a>
-                    <a href="#" class="block text-left mt-[10px] text-content-1">Link Github</a>
+                    <a href="{{$on_link}}" class="block text-left text-content-1"><i class="fa-solid fa-link text-pfd-green-yellow"></i> <span class="underline">Link no Ar </span></a>
+                    <a href="{{$gh_link}}" class="block text-left mt-[10px] text-content-1"><i class="fa-solid fa-link text-pfd-green-yellow"></i> <span class="underline"> Link Github </span></a>
                   </div>
                 </div>
               @endforeach
