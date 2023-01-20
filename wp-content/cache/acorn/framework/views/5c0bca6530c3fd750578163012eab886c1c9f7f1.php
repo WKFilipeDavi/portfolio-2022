@@ -55,18 +55,21 @@
                     <h3 class="text-title-1"><?php echo e(get_the_title($project)); ?> </h3>
                     <p class="text-subtitle-1"><?php if($terms): ?> <?php $__currentLoopData = $terms; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $term): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?> <?php if($loop->iteration > 1): ?>, <?php endif; ?> <?php echo e($term->name); ?> <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?> <?php endif; ?></p>
                     <div class="mt-4 mb-[18px]">
-                      <p class="text-justify">Mussum Ipsum, cacilds vidis litro abertis.
-                        Viva Forevis aptent taciti sociosqu ad litora torquent.
-                        Não sou faixa preta cumpadi,
-                        sou preto inteiris, inteiris.Paisis, filhis,
-                        espiritis santis.Admodum accumsan disputationi eu sit.
-                        Vide electram sadipscing et per.
+                      <p class="text-justify">
+                        <?php echo e(get_the_excerpt($project)); ?>
+
                       </p>
-                      <a href="#" class="block text-right">+ More</a>
+                      <a href="<?php echo e(get_permalink($project)); ?>" class="block text-right text-pfd-green-yellow">+ More</a>
                     </div>
 
-                    <a href="<?php echo e($on_link); ?>" class="block text-left text-content-1"><i class="fa-solid fa-link text-pfd-green-yellow"></i> <span class="underline">Link no Ar </span></a>
-                    <a href="<?php echo e($gh_link); ?>" class="block text-left mt-[10px] text-content-1"><i class="fa-solid fa-link text-pfd-green-yellow"></i> <span class="underline"> Link Github </span></a>
+                    <?php if($on_link): ?>
+                      <a href="<?php echo e($on_link); ?>" class="block text-left text-content-1"><i class="fa-solid fa-link text-pfd-green-yellow"></i> <span class="underline">Link no Ar </span></a>
+                    <?php endif; ?>
+
+                    <?php if($gh_link): ?>
+                      <a href="<?php echo e($gh_link); ?>" class="block text-left mt-[10px] text-content-1"><i class="fa-solid fa-link text-pfd-green-yellow"></i> <span class="underline"> Link Github </span></a>
+                    <?php endif; ?>
+
                   </div>
                 </div>
               <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

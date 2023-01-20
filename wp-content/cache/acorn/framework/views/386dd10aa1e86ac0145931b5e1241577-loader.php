@@ -1,0 +1,2 @@
+<?= \Roots\view('partials.comments', $data ?? get_defined_vars())->render(); ?>
+<?php /**PATH /home/mandelbrot/Documentos/Faculdade/portfolio/portfolio/wp-content/themes/portfolio/resources/views/partials/comments.blade.php ENDPATH**/ ?>

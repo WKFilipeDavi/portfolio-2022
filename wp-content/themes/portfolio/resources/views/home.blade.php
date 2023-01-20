@@ -60,18 +60,20 @@
                     <h3 class="text-title-1">{{get_the_title($project)}} </h3>
                     <p class="text-subtitle-1">@if($terms) @foreach($terms as $term) @if($loop->iteration > 1), @endif {{ $term->name }} @endforeach @endif</p>
                     <div class="mt-4 mb-[18px]">
-                      <p class="text-justify">Mussum Ipsum, cacilds vidis litro abertis.
-                        Viva Forevis aptent taciti sociosqu ad litora torquent.
-                        Não sou faixa preta cumpadi,
-                        sou preto inteiris, inteiris.Paisis, filhis,
-                        espiritis santis.Admodum accumsan disputationi eu sit.
-                        Vide electram sadipscing et per.
+                      <p class="text-justify">
+                        {{ get_the_excerpt($project) }}
                       </p>
-                      <a href="#" class="block text-right">+ More</a>
+                      <a href="{{get_permalink($project)}}" class="block text-right text-pfd-green-yellow">+ More</a>
                     </div>
 
-                    <a href="{{$on_link}}" class="block text-left text-content-1"><i class="fa-solid fa-link text-pfd-green-yellow"></i> <span class="underline">Link no Ar </span></a>
-                    <a href="{{$gh_link}}" class="block text-left mt-[10px] text-content-1"><i class="fa-solid fa-link text-pfd-green-yellow"></i> <span class="underline"> Link Github </span></a>
+                    @if($on_link)
+                      <a href="{{$on_link}}" class="block text-left text-content-1"><i class="fa-solid fa-link text-pfd-green-yellow"></i> <span class="underline">Link no Ar </span></a>
+                    @endif
+
+                    @if($gh_link)
+                      <a href="{{$gh_link}}" class="block text-left mt-[10px] text-content-1"><i class="fa-solid fa-link text-pfd-green-yellow"></i> <span class="underline"> Link Github </span></a>
+                    @endif
+
                   </div>
                 </div>
               @endforeach
