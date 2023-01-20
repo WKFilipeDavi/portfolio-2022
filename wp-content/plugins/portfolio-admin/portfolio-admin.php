@@ -48,8 +48,8 @@ function pfd_projects_cpt() {
       ),
       'public' => true,
       'show_ui' => true,
-      'show_in_menu' => true
-
+      'show_in_menu' => true,
+      'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
   );
 
   register_post_type('pfd_projects', $args);
@@ -68,7 +68,8 @@ function pfd_projects_tax() {
     'labels' => $labels,
     'public' => true,
     'show_ui' => true,
-    'show_in_menu' => true
+    'show_in_menu' => true,
+    'hierarchical' => true,
   );
 
   register_taxonomy('project_type', 'pfd_projects', $args);

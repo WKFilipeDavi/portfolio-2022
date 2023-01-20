@@ -10,6 +10,7 @@ class Home extends Composer
     {
         return [
             'whoAmI' => $this->who(),
+            'projects' => $this->projects(),
         ];
     }
 
@@ -22,5 +23,14 @@ class Home extends Composer
     {
         $who = get_field('who');
         return $who;
+    }
+
+    public function projects() {
+        $args = array(
+            'post_type' => 'pfd_projects',
+            'numberposts' => -1,
+        );
+
+        return get_posts( $args );
     }
 }
